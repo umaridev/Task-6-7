@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <script src="class.js"></script>
+    <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  
+        <div class="bg-white p-8 rounded-xl shadow-md w-full max-w-md mx-4">
+          <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">Arithmetic Calculator</h1>
+          
+          <!-- Input fields for the two numbers -->
+          <div class="space-y-4">
+            <div>
+              <label for="number1" class="block text-gray-700 font-medium mb-1">First Number:</label>
+              <input type="number" id="number1" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter first number">
+            </div>
+            <div>
+              <label for="number2" class="block text-gray-700 font-medium mb-1">Second Number:</label>
+              <input type="number" id="number2" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter second number">
+            </div>
+            
+            <!-- Button to trigger the calculations -->
+            <button onclick="calculate()" class="w-full bg-blue-600 text-white p-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+              Calculate
+            </button>
+          </div>
+          
+          <!-- Div to display the results -->
+          <div id="results" class="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-800">Results</h2>
+            <div id="resultsContent" class="text-gray-700">
+              <!-- Results will be displayed here -->
+              <p>Enter two numbers and click 'Calculate' to see the results.</p>
+            </div>
+          </div>
+          
+        </div>
+</body>
+</html>
